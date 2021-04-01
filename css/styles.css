@@ -1,0 +1,80 @@
+.tooltip {
+    position: absolute;
+    text-align: center;
+    width: 200px;
+    height: 28px;
+    padding: 2px;
+    font: 12px sans-serif;
+    background: lightsteelblue;
+    border-radius: 8px;
+    /*  pointer-events: none;	This line needs to be removed */
+}
+
+.table {
+    font-size: 0.7em;
+    color:#F67E7D;
+}
+
+
+.svg-tooltip {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple   Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background: rgba(69, 77, 93, .9);
+    border-radius: .1rem;
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    padding: .1rem .6rem;
+    position: absolute;
+    text-overflow: ellipsis;
+    z-index: 300;
+    visibility: hidden;
+}
+
+.bar{
+    height: 45%;
+    width: 90%;
+    margin: 10px auto;
+    flex: 1;
+    background-color: #00264d;
+}
+.row{
+    background-color: #00264d
+}
+
+.xAxis path,
+.xAxis line {
+    
+    stroke: #F67E7D;
+
+}
+
+.xAxis text {
+    font-size: 11px;
+    color:#F67E7D;
+}
+.yAxis path,
+.yAxis line {
+    fill: none;
+    stroke: 
+
+}
+
+.yAxis text {
+    font-size: 11px;
+    color:#F67E7D;
+}
+.axis path,
+.axis line {
+    
+    stroke: #F67E7D;
+
+}
+
+.axis text {
+    font-size: 11px;
+    color:#F67E7D;
+}
+.mytext{
+    color: #F67E7D
+}
+tr:hover {color:#f5f5f5;}
