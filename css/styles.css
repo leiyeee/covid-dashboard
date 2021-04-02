@@ -1,9 +1,73 @@
-body {
+html, body {
+  width: 100%;
+  height: 100%;
+  /* overflow: hidden; */
+  padding: 0;
   margin: 0;
-  min-height: 1000px;
-  font-family: "Montserrat", sans-serif;
-    /*background: #12254c*/
 }
+
+.nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background: #f1faee;
+}
+
+.nav li {
+  list-style: none;
+  display: inline-block;
+}
+
+.nav .link {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 11px;
+  font-family: Sans-serif;
+
+  margin: 0 10px;
+    color: black;
+  flex: 1;
+
+  line-height: 1.2;
+  text-decoration: none;
+  background-image: linear-gradient(to right, yellow 0, yellow 100%);
+  background-position: 0 1.2em;
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: background .5s;
+  &:hover, {
+    background-size: 100% 100%;
+  }
+  &--thick {
+    background-position: 0 -0.1em;
+  }
+}
+
+.blocks {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+    padding-top: 10px;
+}
+
+.blocks:nth-child(1) {
+  background: white;
+}
+.blocks:nth-child(2) {
+  background: #f1faee;
+}
+.blocks:nth-child(3) {
+  background: #12254c;
+}
+.blocks:nth-child(4) {
+  background: #e63946;
+}
+.blocks:nth-child(5) {
+  background: #457b9d;
+}
+
 
 .outer-container {
   max-width: 600px;
@@ -14,13 +78,14 @@ body {
 }
 
 .image-container {
-  padding-bottom: 100%;
+  padding-bottom: 80%;
   background: black;
   position: relative;
   overflow: hidden;
   z-index: 2;
   background-size: cover;
   background-position: center;
+  
 }
 
 .section-title {
@@ -34,10 +99,10 @@ body {
   transform: translateY(-50%);
   z-index: 1;
   white-space: nowrap;
-    color: red;
+    color: #e63946;
 }
 .section-title.on-dark {
-  color: lightsteelblue;
+  color: #457b9d;
 }
 .section-title span {
   position: relative;
