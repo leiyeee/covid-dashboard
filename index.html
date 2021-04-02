@@ -10,8 +10,26 @@
 </head>
 
 <body>
+    <section class="fullpage">
+    <div class="outer-container">
+        <div class="image-container" style="background-image: url('img/22.gif');">
 
+            <h2 class="section-title on-dark">
+                <span class="paralax-title">
+                    COVID is everyhere
+                </span>
+            </h2>
+        </div>
+
+        <h2 class="section-title">
+            <span class="paralax-title">
+                  COVID is everyhere
+            </span>
+        </h2>
+    </div>
+    </section>
     <!-- WRAPPER -->
+    <section>
     <div class="container-fluid" style="height: 100%; padding-top: 1vh">
         <div class="row">
             <div class="col-10 offset-1" style="border: thin solid grey; border-radius: 5px;">
@@ -31,9 +49,9 @@
 
                         <div class="row">
                             <div id="stateCarousel" class="carousel slide" data-ride="carousel" style="width: 100%">
-                                
+
                                 <div class="carousel-inner">
-                                    
+
                                     <!-- TABLE -->
                                     <div class="carousel-item">
                                         <div class="col">
@@ -92,6 +110,7 @@
         </div>
 
     </div>
+    </section>
 
 
     <!-- - - - - - - - - - - - >
@@ -117,4 +136,26 @@
     <script src="js/barVis.js"></script>
     <script src="js/brushVis.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        let didScroll = false;
+        let paralaxTitles = document.querySelectorAll('.paralax-title');
+
+        const scrollInProgress = () => {
+            didScroll = true
+        }
+
+        const raf = () => {
+            if (didScroll) {
+                paralaxTitles.forEach((element, index) => {
+                    element.style.transform = "translateX(" + window.scrollY / 10 + "%)"
+                })
+                didScroll = false;
+            }
+            requestAnimationFrame(raf);
+        }
+
+
+        requestAnimationFrame(raf);
+        window.addEventListener('scroll', scrollInProgress)
+    </script>>
 </body></html>
