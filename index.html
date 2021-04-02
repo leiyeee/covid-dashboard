@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>CS171 | LEI YE</title>
+    <title>COVID-19 Dashboard</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
 
@@ -12,14 +12,14 @@
 <body>
 
     <!-- WRAPPER -->
-    <div class="container-fluid" style="height: 100vh; padding-top: 1vh">
+    <div class="container-fluid" style="height: 100%; padding-top: 1vh">
         <div class="row">
             <div class="col-10 offset-1" style="border: thin solid grey; border-radius: 5px;">
 
                 <!-- HEADING -->
                 <div class="row d-flex justify-content-center" style="height: 10vh; padding: 0; background: #00264d;">
                     <div class="align-self-center">
-                        <h2 style="color:aliceblue">Corona Virus Dashboard</h2>
+                        <h2 style="color:aliceblue">COVID-19 Dashboard</h2>
                     </div>
                 </div>
 
@@ -28,10 +28,12 @@
 
                     <!-- LEFT -->
                     <div class="col-7">
+
                         <div class="row">
                             <div id="stateCarousel" class="carousel slide" data-ride="carousel" style="width: 100%">
+                                
                                 <div class="carousel-inner">
-
+                                    
                                     <!-- TABLE -->
                                     <div class="carousel-item">
                                         <div class="col">
@@ -59,21 +61,12 @@
 
                     <!-- RIGHT -->
                     <div class="col-5">
-                        <div class="row" style="height: 20%; background: #00264d; padding-left: 0vh; padding-bottom: 1vh; padding-right: 1vh; padding-top: 1vh">
-                            <div class="col" style="border: thin solid grey; border-radius: 5px; background:#00264d">
-                                <div class="row" style="height: 100%">
-                                    <div class="col-4">
-                                        <div class="row justify-content-center" style="height: 100%">
-                                            <button class="btn btn-light align-self-center" type="button" onclick="switchView()">switch view</button>
-                                        </div>
-                                    </div>
-                                
-                                </div>
-                            </div>
+                        <div class="row" style="height: 10%; background: #00264d; padding-left: 0vh; padding-bottom: 1vh; padding-right: 1vh; padding-top: 1vh">
+                            <button class="btn btn-light align-self-center" type="button" onclick="switchView()">switch view</button>
                         </div>
                         <div class="row justify-content-center" style="height: 80%; background:#00264d; padding-left: 0vh; padding-bottom: 1vh; padding-right: 1vh; padding-top: 0vh">
                             <div id="scatterDiv" class="align-self-center" style="height: 100%; width:100%; border: thin solid grey; border-radius: 5px; background:#00264d">
-                                <div class="col-md-4 align-self-end" style="padding-top: 20px; padding-left: 55px">
+                                <div class="col-md-4 align-self-end" style="padding-top: 10px; padding-left: 55px">
                                     <p class="align-self-center">
                                         <select id="selectedbar" class="form-control" onchange="selectedbarfun()" style="background-color: #F67E7D ">
                                             <option value="relCases">relCases</option>

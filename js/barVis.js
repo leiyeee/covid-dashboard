@@ -36,7 +36,7 @@ class BarVis {
         vis.svg.append('g')
             .attr('class', 'title bar-title')
             .append('text')
-            .text('Barchart')
+            .text('Top/Last five states')
             .attr('transform', `translate(${vis.width / 2}, -10)`)
             .attr('text-anchor', 'middle')
             .style("fill", "#b3d1ff");
