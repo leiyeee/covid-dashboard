@@ -78,7 +78,7 @@ html, body {
 }
 
 .image-container {
-  padding-bottom: 80%;
+  padding-bottom: 100%;
   background: black;
   position: relative;
   overflow: hidden;
