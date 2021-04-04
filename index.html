@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+
     <title>COVID-19 Dashboard</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
@@ -10,16 +11,17 @@
 </head>
 
 <body>
-    <nav class="nav">
+    <nav class="navbar navbar-custom">
         <ul>
-            <li><a href="#bloco1" class="link">Intro</a></li>
-            <li><a href="#bloco2" class="link">Dashboard</a></li>
-            <li><a href="#bloco3" class="link">Reflection</a></li>
-            <li><a href="#bloco4" class="link">Tips</a></li>
+            <li><a href="#bloco1" class="link"><button class="btn draw-border">Intro</button></a></li>
+            <li><a href="#bloco2" class="link"><button class="btn draw-border">Dashboard</button></a></li>
+            <li><a href="#bloco3" class="link"><button class="btn draw-border">Tips</button></a></li>
+            <li><a href="#bloco4" class="link"><button class="btn draw-border">Info</button></a></li>
         </ul>
     </nav>
-    <div class="blocks" id="bloco1"><div class="outer-container">
-            <div class="image-container" style="background-image: url('img/7.gif');">
+    <div class="blocks" id="bloco1">
+        <div class="outer-container">
+            <div class="image-container" style="background-image: url('img/7.gif'); padding-top: 20%">
 
                 <h2 class="section-title on-dark">
                     <span class="paralax-title">
@@ -33,8 +35,10 @@
                     COVID is everyhere
                 </span>
             </h2>
-        </div></div>
-    <div class="blocks" id="bloco2"><div class="container-fluid" style="height: 100%; padding-top: 1vh">
+        </div>
+    </div>
+    <div class="blocks" id="bloco2">
+        <div class="container-fluid" style="height: 100%; padding-top: 1vh">
             <div class="row">
                 <div class="col-10 offset-1" style="border: thin solid grey; border-radius: 5px;">
 
@@ -70,7 +74,7 @@
                                         <div class="carousel-item active">
                                             <div class="col">
                                                 <div class="row" style="height: 70vh; background-color:#0a071a padding: 1vh;">
-                                                    <div id="mapDiv" style="height: 100%; width:100%;">
+                                                    <div id="mapDiv" style=" width:100%;">
 
                                                     </div>
                                                 </div>
@@ -84,7 +88,7 @@
                         <!-- RIGHT -->
                         <div class="col-5">
                             <div class="row" style="height: 10%; background: #00264d; padding-left: 0vh; padding-bottom: 1vh; padding-right: 1vh; padding-top: 1vh">
-                                <button class="btn btn-light align-self-center" type="button" onclick="switchView()">switch view</button>
+                                <button class="btn draw-border" type="button" onclick="switchView()">switch view</button>
                             </div>
                             <div class="row justify-content-center" style="height: 80%; background:#00264d; padding-left: 0vh; padding-bottom: 1vh; padding-right: 1vh; padding-top: 0vh">
                                 <div id="scatterDiv" class="align-self-center" style="height: 100%; width:100%; border: thin solid grey; border-radius: 5px; background:#00264d">
@@ -106,18 +110,64 @@
                         </div>
 
                     </div>
-                    <div class="row" style="height: 18vh; background: #00264d; padding: 0; border: 0">
+                    <div class="row" style="height: 18vh; background: #00264d; padding-bottom: 10px; border: 0; ">
                         <div id="brushDiv" style="height: 100%; width:100%;"></div>
                     </div>
 
                 </div>
             </div>
 
-        </div></div>
-    <div class="blocks" id="bloco3"></div>
-    <div class="blocks" id="bloco4"></div>
-   
-    
+        </div>
+    </div>
+    <div class="blocks" id="bloco3">
+        <div class="c1">
+
+            <h1 style="padding-top:70px;">Disinfection 💩</h1>
+            <div class="content v3">
+                <p>This season is gonna blow your mind ! Like this season is crazy dawg! You know what happens on the first episode ? You are not gonna believe me bro, like It's crazy dude !</p>
+            </div>
+
+            <h1>Wash hands 😎</h1>
+            <div class="content v4">
+                <p>I dont' know dude, May be this could be important, May be not, who knows? I don't know, Do you know? Do you know somebody that knows this maybe, call me maybe.</p>
+            </div>
+            <h1>Social distancing 🙈</h1>
+            <div class="content v5">
+                <p>Remember when I told you about this thing back in the day, when I was younger, you know those days right? Well guess what, I was totally wrong about that. Heh, This is embarassing </p>
+            </div>
+            <h1>Exercising 🙈2 </h1>
+            <div class="content v6">
+                <p>Hold on, Hold on. May be I WAS right at the time, they just changed the stuff now. Like I didn't know this was gonna happen, but now that It did, Well I guess I have to remove this now..</p>
+            </div>
+            <h1>Mental Health 🤡</h1>
+            <div class="content v7">
+                <p>YO! What's up everybody, It's ya-boi Shloopy Mcfloopy-face, back at it again with the new stuff! This time it's gon-be liiiittt, son ! Hit that Subscribbe Button, Smash that bell! See you guys on the next video</p>
+            </div>
+            <h1>Stay with family 🎨</h1>
+            <div class="content v8">
+                <p>Here is the point, This point of mine is Striking, It is powerful. It is important. I have the data to back that up, Statistics show that this point of mine is indeed true. A Study conducted in 2015 proves that I have been right all along, what you gonna do about it huh?</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="blocks" id="bloco4" style="padding-top: 20px; padding-bottom: 50px; padding-right: 50px; padding-left: 50px;">
+        <div class="row row1">
+            <div class="col">
+                <p>
+                    <b style="color: #e63946;">COVID dashboard</b><br>
+                    Project by Lei Ye | Harvard Graduate School of Design M.Des Program<br><br>
+                    <a href="https://www.ye-lei.xyz/">About Lei Ye</a><br>
+                  
+                  
+                </p>
+            </div>
+            <div class="col" style="text-align: right;">
+                <p><a href="https://www.cs171.org/2020/">Harvard CS171: Data Visualization</a></p>
+            </div>
+        </div>
+    </div>
+
+
 
 
     <!-- - - - - - - - - - - - >
@@ -164,18 +214,18 @@
 
         requestAnimationFrame(raf);
         window.addEventListener('scroll', scrollInProgress)
-        
+
         $(document).ready(function() {
 
-  $('.link').on('click', function(e){
-    
-    var hash = $(this).attr('href');
-     $('html,body').animate({
-       scrollTop: $(hash).offset().top
-     }, 800);
-    
-    return false;
-  });
-});
+            $('.link').on('click', function(e) {
+
+                var hash = $(this).attr('href');
+                $('html,body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800);
+
+                return false;
+            });
+        });
     </script>
 </body></html>

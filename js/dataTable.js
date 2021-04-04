@@ -17,7 +17,7 @@ class DataTable {
         let tableObject = this
         tableObject.table = d3.select(`#${tableObject.parentElement}`)
             .append("table")
-            .attr("class", "table table-hover")
+            .attr("class", "table")
 
         // append table head
         tableObject.thead = tableObject.table.append("thead")

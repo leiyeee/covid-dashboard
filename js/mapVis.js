@@ -225,7 +225,7 @@ class MapVis {
             .data(d3.range(10))
             .enter()
             .append('rect')
-            .attr('x', (d, i) => i * 30 + vis.width / 2 + 180)
+            .attr('x', (d, i) => i * 20 + vis.width / 2 + 180)
             .attr('y', 650)
             .attr('width', 30)
             .attr('height', 40)
@@ -237,7 +237,7 @@ class MapVis {
             .append("text")
             .attr("class", "mytext")
             .text(d3.max(vis.stateInfo, d => d[selectedbar]))
-            .attr('x', (d, i) => 9 * 31 + vis.width / 2 + 200)
+            .attr('x', (d, i) => 9 * 31 + vis.width / 2 + 100)
             .attr('y', 720)
             .style("fill", "#b3d1ff")
 

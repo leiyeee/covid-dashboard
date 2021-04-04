@@ -7,9 +7,10 @@ body {
     margin: 0;
 }
 
-.nav {
+
+.navbar {
     width: 100%;
-    height: 50px;
+    height: 6.5%;
     position: fixed;
     top: 0;
     left: 0;
@@ -19,13 +20,13 @@ body {
     align-items: center;
 }
 
-.nav li {
+.navbar li {
     list-style: none;
     display: inline-block;
 }
 
-.nav .link {
-    
+.navbar .link {
+
     text-transform: uppercase;
     text-decoration: none;
     font-size: 15px;
@@ -35,26 +36,10 @@ body {
     color: black;
     flex: 1;
     line-height: 1.2;
-    text-decoration: none;
-    background-image: linear-gradient(to right, yellow 0, yellow 100%);
-    background-position: 0 1.2em;
-    background-size: 0 100%;
-    background-repeat: no-repeat;
-    transition: background .5s;
-
-    &:hover,
-        {
-        background-size: 100% 100%;
-    }
-
-    &--thick {
-        background-position: 0 -0.1em;
-    }
 }
 
 .blocks {
     width: 100%;
-    min-height: 100%;
     overflow: hidden;
     padding-top: 20px;
 }
@@ -76,7 +61,7 @@ body {
 }
 
 .blocks:nth-child(5) {
-    background: #457b9d;
+    background: #f1faee;
 }
 
 
@@ -139,6 +124,11 @@ body {
     color: #F67E7D;
 }
 
+tr:hover {
+    color: aliceblue;
+}
+
+
 
 .svg-tooltip {
     font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple   Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -164,6 +154,8 @@ body {
 
 .row {
     background-color: #00264d
+}.row1 {
+    background-color: #f1faee
 }
 
 .xAxis path,
@@ -208,4 +200,200 @@ body {
 
 tr:hover {
     color: #f5f5f5;
+}
+
+
+.draw-border {
+    box-shadow: inset 0 0 0 4px #58afd1;
+    color: #58afd1;
+    transition: color 0.25s 0.0833333333s;
+    position: relative;
+}
+
+.draw-border::before,
+.draw-border::after {
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.draw-border::before {
+    border-bottom-width: 4px;
+    border-left-width: 4px;
+}
+
+.draw-border::after {
+    border-top-width: 4px;
+    border-right-width: 4px;
+}
+
+.draw-border:hover {
+    color: #e63946;
+}
+
+.draw-border:hover::before,
+.draw-border:hover::after {
+    border-color: #e63946;
+    transition: border-color 0s, width 0.25s, height 0.25s;
+    width: 100%;
+    height: 100%;
+}
+
+.draw-border:hover::before {
+    transition-delay: 0s, 0s, 0.25s;
+}
+
+.draw-border:hover::after {
+    transition-delay: 0s, 0.25s, 0s;
+}
+
+.btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    line-height: 1.2;
+    font: 500 1rem "Roboto Slab", sans-serif;
+    padding: 0.5em 2em;
+    letter-spacing: 0.05rem;
+}
+
+.btn:focus {
+    outline: 1px dotted #55d7dc;
+}
+
+
+.c1 {
+    padding-top: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1em;
+    
+}
+
+.content {
+    margin-bottom: 3em;
+}
+
+.content p {
+    display: inline;
+    background-repeat: no-repeat;
+    transition: all 500ms ease-in-out;
+}
+
+.v1 p {
+    background-position: bottom left;
+    background-size: 0% 5px;
+    background-image: linear-gradient(#e53e3e, #e53e3e);
+    padding-bottom: 5px;
+}
+
+.v1:hover p {
+    background-size: 100% 5px;
+}
+
+.v2 p {
+    background-position: left;
+    background-size: 0% 100%;
+    background-image: linear-gradient(#f6e05e, #f6e05e);
+}
+
+.v2:hover p {
+    background-size: 100% 100%;
+}
+.v3{}
+.v3 p {
+    color: transparent;
+    background-position: right;
+    background-size: 100% 100%;
+    background-image: linear-gradient(#a0aec0, #a0aec0);
+}
+
+.v3:hover p {
+    color: #000;
+    background-size: 0% 100%;
+}
+
+.v4 p {
+    background-position: bottom left;
+    background-size: 0% 3px;
+    background-image: repeating-linear-gradient(to right, #4834d4 0 3px, transparent 0 6px);
+    padding-bottom: 3px;
+}
+
+.v4:hover p {
+    background-size: 100% 3px;
+}
+
+.v5 p {
+    background-position: center left;
+    background-size: 100% 3px;
+    background-image: linear-gradient(to right, #000, #000);
+    padding-bottom: 3px;
+}
+
+.v5:hover p {
+    background-size: 100% 100%;
+    color: #fff;
+    background-image: linear-gradient(to right, #e53e3e, #e53e3e);
+}
+
+.v6 p {
+    background-position: center left;
+    background-size: 100% 4px;
+    background-image: linear-gradient(to right, #000, #000);
+    padding-bottom: 4px;
+}
+
+.v6:hover p {
+    background-position: bottom left;
+    background-size: 100% 2px;
+    font-style: italic;
+}
+
+.v7 p {
+    background-position: left;
+    background-size: 0% 100%;
+    background-image: linear-gradient(to right, #f6e05e, #f6e05e);
+}
+
+.v7:hover p {
+    background-position: right;
+    background-size: 100% 100%;
+}
+
+.v8 p {
+    background-position: left;
+    background-size: 0% 100%;
+    background-image: linear-gradient(to right, #9ae6b4, #f6e05e);
+    padding-bottom: 4px;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+}
+
+.v8:hover p {
+    background-size: 100% 100%;
+}
+#bloco4{
+     height: 10%;
+}
+#bloco3{
+     height: 100%;
+}
+#bloco2{
+     height: 100%;
+}
+#bloco1{
+     height: 100%;
+}
+
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
 }
